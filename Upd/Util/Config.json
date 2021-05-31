@@ -1,0 +1,16 @@
+{
+    "ServerDomain":"None",
+    "ServerPort":8080,
+    "TimeOut":30,
+    "Interval":{
+        "Hours":1,
+        "Minutes":2,
+        "Seconds":3
+    },
+    "URI_Auth":"https://www.Auth.com",
+    "URI_Detect":"https://www.Detect.com",
+    "URI_DownLoad":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201409%2F09%2F130415ome6e930vp99to05.jpg&refer=http%3A%2F%2Fattach.bbs.miui.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624501298&t=925e21a2d9d98dac6831e4efcc7f2500 ",
+    "URI_RollBack":"https://www.RollBack.com",
+    "Config_File":"Config.json",
+    "SchedulerLog":"SchedulerLog.log"
+}
