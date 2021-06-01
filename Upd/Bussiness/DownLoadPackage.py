@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-
+import asyncio
 import os
 import time
 
@@ -28,12 +28,11 @@ class DownLoadPackage():
 
     @staticmethod
     def DownLoad(url, name):
-
         if not isinstance(url, str):
             raise Exception("url doesn't math str")
 
         if not isinstance(name, str):
-            raise Exception("url doesn't math str")
+            raise Exception("name doesn't math str")
 
         requests.packages.urllib3.disable_warnings()
         r = requests.head(url)
@@ -59,6 +58,7 @@ class DownLoadPackage():
             with open(name, "w") as f:
                 f.seek(0)
                 f.truncate()
+                temp_size = 0
 
         headers = {'Range': 'bytes=%d-' % temp_size}
         res = requests.get(url, headers=headers, stream=True, verify=False)
@@ -69,10 +69,9 @@ class DownLoadPackage():
                         t.update(len(chunk))
                         f.write(chunk)
                         f.flush()
-                        time.sleep(0.01)
         else:
             res.raise_for_status()
-        return {"first": "Hello", "second": "World"}
+        return 0
 
 
 if __name__ == '__main__':

@@ -5,8 +5,8 @@
 import os
 import asyncio
 import aiohttp
-from Upd.Schedule.SchedulerTask import SchedulerTask
-from Upd.Util.Configure import ConfigProfile
+from UpdateProcess.Upd.Schedule.SchedulerTask import SchedulerTask
+from UpdateProcess.Upd.Util.Configure import ConfigProfile
 
 basepath = os.path.abspath(os.path.dirname(__file__))
 
