@@ -1,0 +1,14 @@
+{
+    "ServerDomain":"None",
+    "ServerPort":8080,
+    "TimeOut":30,
+    "Interval":{
+        "Hours":0,
+        "Minutes":0,
+        "Seconds":3
+    },
+    "URI_Detect":"http://52.82.25.201:4000/files?vin=vin_1",
+    "PATH":"/opt",
+    "Config_File":"Config.json",
+    "SchedulerLog":"SchedulerLog.log"
+}
